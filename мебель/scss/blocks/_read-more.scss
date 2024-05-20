@@ -1,0 +1,17 @@
+.read-more {
+    display: inline-flex;
+    gap: 13px;
+    align-items: center;
+    color: var(--color-accent);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+
+    &:after {
+        content: url(./../img/grommet-icons_form-next-link.png);
+    }
+
+    &--large {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,41 @@
+.slider {
+    position: relative;
+}
+
+.slider-btn {
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10.87px;
+    box-shadow: 0px 7.031px 19.531px 0px rgba(0, 0, 0, 0.06);
+}
+
+.slider-btn--prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @include tablet {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.slider-btn--next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+
+    @include tablet {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

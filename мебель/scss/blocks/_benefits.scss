@@ -1,0 +1,40 @@
+.benefits {
+    padding: 120px 0;
+    padding-top: clamp(3.75rem, 2.679rem + 5.36vw, 7.5rem);
+}
+
+.benefits__title {
+    align-self: center;
+    font-weight: 700;
+    font-size: 40px;
+    font-size: clamp(1.875rem, 1.696rem + 0.89vw, 2.5rem);
+    text-transform: capitalize;
+    max-width: 280px;
+}
+
+.benefit__text {
+    color: var(--color-text-main);
+    font-size: 16px;
+    line-height: 185%; /* 29.6px */
+    margin-bottom: 14px;
+    opacity: 0.8;
+}
+
+.benefits__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.benefit__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 0.9;
+    color: var(--color-text-main);
+}

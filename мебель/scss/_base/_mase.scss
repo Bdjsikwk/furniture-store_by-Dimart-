@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@400;600&family=Montserrat:wght@400;500;700&display=swap');
+
+html,
+body {
+    font-family: var(--font-main);
+    color: var(--color-text-main);
+}
+// body {
+//     padding-bottom: 50vh;
+// }
+
+.container {
+    max-width: 1310px;
+    max-width: clamp(18.125rem, -0.089rem + 91.07vw, 81.875rem);
+    padding: 0 15px;
+    margin: 0 auto;
+
+    &--small {
+        max-width: 1130px;
+    }
+}
+
+.none {
+    display: none !important;
+}

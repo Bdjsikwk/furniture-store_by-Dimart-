@@ -1,0 +1,19 @@
+.cart {
+    align-self: center;
+    justify-self: end;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: 3px;
+    right: -6px;
+    display: inline-block;
+    height: 25px;
+    font-family: inter;
+    padding: 0 6px;
+    border-radius: 40px;
+    background-color: var(--ui-orange);
+    line-height: 25px;
+    font-weight: 500;
+}

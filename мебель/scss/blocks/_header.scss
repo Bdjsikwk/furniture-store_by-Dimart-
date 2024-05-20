@@ -1,0 +1,92 @@
+@mixin retina-bg ($image) {
+    @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+        background-image: url('./../img/header/bg.jpg');
+    }
+}
+
+.header {
+    position: relative;
+    padding-top: 40px;
+    background-image: url('./../img/header/bg.jpg');
+    aspect-ratio: 1440 / 1084;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: var(--header-text);
+    padding-bottom: 200px;
+    background-position: center;
+
+    @include retina-bg(url('./../img/header/bg.jpg'));
+
+    a {
+        color: var(--header-text);
+    }
+
+    @include tablet() {
+        position: static;
+    }
+}
+
+.header-content {
+    text-align: center;
+    font-size: 24px;
+    font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
+    
+}
+
+.header-title {
+    margin-bottom: 14px;
+    font-size: 80px;
+    font-size: clamp(1.75rem, 0.821rem + 4.64vw, 5rem);
+    font-weight: 700;
+    line-height: 130%; /* 104px */
+    letter-spacing: -0.8px;
+    text-transform: capitalize;
+}
+
+p,
+.header-text {
+    margin: 0 auto;
+    max-width: 666px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 38.4px */
+    opacity: 0.8;
+    font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
+}
+
+.header-search {
+    margin: 45px auto 0;
+    
+    @include tablet {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.header-dot-sofa {
+    position: absolute;
+    left: 19.5%;
+    top: 63%;
+}
+
+.header-dot-vaz {
+    position: absolute;
+    left: 7%;
+    top: 69%;
+}
+
+.header-dot-item {
+    position: absolute;
+    left: 55.3%;
+    top: 72%;
+}
+
+.header-dot-wall {
+    position: absolute;
+    left: 95%;
+    top: 75.5%;
+}
