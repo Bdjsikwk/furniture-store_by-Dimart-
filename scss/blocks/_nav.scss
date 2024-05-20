@@ -1,0 +1,30 @@
+.header-nav {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    gap: 20px;
+    margin-bottom: clamp(1.875rem, 0.875rem + 5vw, 5.375rem);
+    align-items: center;
+
+    @include tablet() {
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        justify-self: start;
+        width: clamp(12.5rem, -7.321rem + 99.11vw, 81.875rem);
+    }
+}
+
+.nav-logo {
+    align-self: center;
+}
+
+
+.mobaile {
+    display: flex;
+    gap: 30px;
+    right: 0;
+
+    @include tablet() {
+        width: clamp(3.75rem, 2.571rem + 5.89vw, 7.875rem);
+    }
+}

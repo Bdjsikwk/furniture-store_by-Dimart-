@@ -1,0 +1,19 @@
+.sub-nav {
+    display: grid;
+    gap: 16px;
+    padding: 20px 15px;
+    background-color: var(--footer-bg-color);
+    border-radius: 16px;
+    margin-top: 4px;
+    font-size: 14px;
+    color: #fff;
+
+    a {
+        color: #fff;
+        transition: .3s;
+
+        &:hover {
+            color: var(--color-accent);
+        }
+    }
+}

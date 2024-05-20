@@ -1,0 +1,13 @@
+.logo {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.28px;
+    text-transform: capitalize;
+    color: #fff !important;
+
+    font-size: clamp(1.125rem, 0.946rem + 0.89vw, 1.75rem);
+
+    &--header {
+        margin-left: 20px;
+    }
+}

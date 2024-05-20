@@ -1,0 +1,65 @@
+.nav-list {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    gap: 65px;
+    font-size: 18px;
+    font-weight: 500;
+
+    @include mobaile {
+        gap: 50px;
+    }
+}
+
+.nav-list-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: .4s;
+
+    &:hover {
+        color: var(--color-accent);
+    }
+
+    &--dropdown {
+        &::after {
+            content: url(./../img/eva_arrow-ios-back-outline.svg);
+            height: 18px;
+        }
+    }
+
+    @include tablet() {
+        display: none;
+    }
+}
+
+.tablet-menu {
+    display: none;
+    width: 30px;
+    height: 30px;
+
+    @include tablet() {
+        display: block;
+    }
+}
+
+.nav-list-item {
+    position: relative;
+}
+
+.nav-list-sub-nav {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transform: translate(0, 10%);
+    transition: .4s;
+}
+
+.nav-list-item:hover .nav-list-sub-nav{
+    pointer-events: all;
+    opacity: 1;
+    transform: translate(0, 0);
+}

@@ -1,0 +1,23 @@
+.products {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.products-title {
+    margin-bottom: 32px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    font-size: clamp(1.875rem, 1.696rem + 0.89vw, 2.5rem);
+    color: var(--color-text-main);
+}
+
+.products-tabs {
+    display: block;
+    margin: 0 auto 80px;
+}
+
+.products-slider {
+    margin-bottom: 60px;
+}
